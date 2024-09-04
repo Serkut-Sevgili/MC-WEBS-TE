@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins, Sans-serif';
+    background-color: #f5f5f5; /* Genel arka plan rengi */
+   
+}
+
+/* Navbar Stili */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1E1E44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+    width: 120px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0a500;
+}
+
+/* Banner Stili */
+.banner {
+    position: relative;
+    height: 550px;
+    background-image: url('İmages/projectback.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content {
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.0); /* Yarı şeffaf arka plan */
+    border-radius: 10px;
+    height: 90px;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Projects Bölümü Stili */
+.projects {
+    padding: 40px 20px;
+    color: white; /* Yazı rengi */
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003366
+
+
+}
+
+.project-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #F7F6F2 ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    text-align: left;
+    color: white;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+}
+
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #003366
+}
+
+.project-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+
+/* Footer Stili */
+footer {
+    position:relative;
+    background-color: #1E1E44; /* Arka plan rengi */
+    padding: 40px 20px;
+    color: #fff; /* Metin rengi */
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Logo Stili */
+.footer-logo {
+    width: 150px;
+}
+
+.footer-logo img {
+    width: 100px; /* Logonun boyutu */
+    display: block;
+    margin: 0; /* Sola yasla */
+}
+
+/* Slogan Stili */
+
+.footer-column {
+    width: 22%; /* Kolon genişliği */
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+    font-size: 15px;
+
+}
+.footer-column ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: font-size 0.3s ease;
+
+}
+.footer-column ul li a:hover{
+    font-size: 16px;
+
+}
+.footer-copyright {
+    
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.0)  ;
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* Responsive Footer Stili */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        width: 60px; /* Mobilde daha küçük logo */
+        margin-bottom: 20px;
+    }
+}

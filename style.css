@@ -1,0 +1,316 @@
+/* Genel Body Stili */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';    
+    background-image: url('İmages/back-ground.jpg'); /* Sitenin genel arka plan görseli */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+body, h1, h2, h3, h4, h5, h6, p, a {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Gölge ayarları */
+}
+
+/* Navbar Stili */
+.navbar {
+    position: fixed; /* Sayfanın üst kısmında sabit kalır */
+    top: 0; /* Üst kısımda konumlandır */
+    width: 100%; /* Tam genişlik */
+    background: rgba(0, 0, 0, 0.4); /* Şeffaf arka plan rengi */
+    display: flex;
+    justify-content: space-between; /* Logo ve menüyü aralar */
+    align-items: center; /* Yükseklik boyunca ortalar */
+    padding: 15px 20px; /* Üst ve alt boşluk artırıldı */
+    height: 60px;
+    z-index: 1000; /* Diğer içeriklerin üstünde görünmesini sağlar */
+}
+
+/* Logo Stili */
+.logo {
+    width: 120px; /* Logonun boyutunu ayarlayın */
+    height: auto;
+    cursor: pointer;
+    margin-right: 20px; /* Menü öğeleri ile aralarına boşluk bırakır */
+    z-index: 1000;
+}
+
+/* Menü Stili */
+.navbar ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Menü itemlerini dikeyde ortalar */
+}
+
+/* Menü Öğesi Stili */
+.navbar ul li {
+    margin: 0 20px; /* Sol ve sağ boşluk artırıldı */
+}
+
+/* Menü Bağlantıları Stili */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 20px; /* İç boşluk artırıldı */
+    border-radius: 5px; /* Köşeleri yuvarlar */
+    transition: background-color 0.3s, color 0.3s; /* Renk geçiş efekti */
+}
+
+/* Menü Bağlantıları Üzerine Gelindiğinde Stil */
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Arka plan rengi değişimi */
+    color: #BC9F8B; /* Yazı rengi değişimi */
+}
+.hamburger-menu {
+    display: none; /* Varsayılan olarak gizli */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+
+
+/* Banner Stili */
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #003f8a;
+}
+
+/* Hizmetler Bölümü */
+.container-content {
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.0); /* Metin okunabilirliği için yarı saydam arka plan */
+    border-radius: 8px;
+}
+
+.section h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #00bcd4;
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    color: #00bcd4;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color:#FFFFE0;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-lg-4, .col-md-6, .col-xs-12 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 1rem;
+}
+
+.item-boxes {
+    background: grey;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-boxes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 0;
+    color: #F4DEB3;
+    font-size: 25px;
+}
+
+p {
+    color: white;
+    font-size: 17px;
+}
+
+/* Partners Bölümü */
+.partners {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.0); /* Arka plan rengi */
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.partners h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.partner-logos {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap; /* Tek satırda kalmalarını sağlar */
+    animation: scroll 20s linear infinite; /* Animasyonu uygular */
+}
+
+.partner-logos .logo {
+    flex: 0 0 auto;
+    width: 200px; /* Logo genişliği */
+    margin: 0 15px; /* Logo arasındaki boşluk */
+}
+
+.partner-logos .logo img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Footer Stili */
+footer {
+    position:relative;
+    background-color: #1E1E44; /* Arka plan rengi */
+    padding: 40px 20px;
+    color: #fff; /* Metin rengi */
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Stili */
+.footer-logo {
+    width: 150px;
+}
+
+.footer-logo img {
+    width: 100px; /* Logonun boyutu */
+    display: block;
+    margin: 0; /* Sola yasla */
+}
+
+/* Slogan Stili */
+.footer-column {
+    width: 22%; /* Kolon genişliği */
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: font-size 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    font-size: 16px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Anahtar kelimeler -->
+     <meta name="keywords" content="BT Danışmanlığı, Teknoloji Çözümleri, AR/VR, Web Tasarımı, Mobil Uygulama, Masaüstü Uygulama Geliştirme, Mobil Oyun Geliştirme, 2D Oyunlar, 3D Oyunlar, Teknoloji, Yazılım, Web Uygulamaları,Stok Takibi,Muhasebe Yazılımları, VR Oyun, Sanal Gerçeklik, Artırılmış Gerçeklik, ">
+
+    <title>MC GLOBAL - BT DANIŞMANLIĞI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="İmages/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="İmages/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="İmages/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <!-- Banner Bölümü -->
+    <div
+      class="relative bg-cover bg-center h-screen"
+      style="background-image: url('/İmages/ux-uı.png')"
+    >
+      <div
+        class="navbar flex justify-between items-center p-6 bg-gray-900 bg-opacity-50 "
+      >
+        <a href="deneme.html" class="z-50"
+          ><img src="İmages/logo.PNG" alt="MC Global Logo" class="h-24 "
+        /></a>
+        <div class="md:hidden flex items-center ">
+          <button id="hamburger" class="text-white focus:outline-none z-50">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden md:flex z-50">
+          <ul class="flex space-x-6 text-white z-50">
+            <li><a href="deneme.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="projelerimiz.html">Projelerimiz </a></li>
+            <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Menü Overlay (Sayfanın üstüne kaplayan görünmez alan) -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden"
+      ></div>
+
+      <!-- Mobil Menü Başlangıçta Gizli -->
+      <div
+        id="mobile-nav-links"
+        class="hidden fixed top-16 right-0 w-48 bg-gray-900 text-white shadow-lg z-50"
+      >
+        <ul>
+          <li><a href="deneme.html" class="block p-4 hover:bg-gray-700">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html" class="block p-4 hover:bg-gray-700">Hakkımızda</a></li>
+          <li><a href="projelerimiz.html" class="block p-4 hover:bg-gray-700">Projelerimiz </a></li>
+          <li><a href="hizmetlerimiz.html" class="block p-4 hover:bg-gray-700">Hizmetlerimiz</a></li>
+        </ul>
+      </div>
+
+      <div
+        class="banner-content text-center text-white absolute inset-0 flex flex-col justify-center items-center"
+      >
+        <h1 class="text-5xl font-bold">UI/UX Tasarım Hizmetleri
+        </h1>
+        <p class="mt-6 max-w-md "  style="font-size: 18px">
+
+            MC Globalin kreatif tasarım anlayışına sahip çok disiplinli uzmanlardan oluşan kurum içi UI/UX tasarım ekibiyle harika çözümler elde edin.
+
+        </p>
+      
+      </div>
+    </div>
+    
+    <div class="banner-description bg-gradient-to-r from-blue-500 to-teal-400 p-6 text-center rounded-lg shadow-lg mb-8">
+        <p class="text-white">
+            Kullanıcı deneyimini mükemmelleştiren tasarımlarımızla her cihazda sorunsuz ve etkileyici bir deneyim sunuyoruz.
+        </p>
+    </div>
+    
+    
+    <div class="details-container space-y-16 p-8 md:p-16 bg-white">
+        <!-- İlk fotoğraf solda, yazı sağda -->
+        <div class="details-item flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="details-photo flex-shrink-0">
+                <img src="/İmages/ui-ux-1.png" alt="Kullanıcı Deneyimi " class="w-full h-auto md:max-w-md rounded-lg shadow-2xl">
+            </div>
+            <div class="details-text text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">Kullanıcı deneyimini mükemmelleştiren tasarımlarımızla her cihazda sorunsuz ve etkileyici bir deneyim sunuyoruz.</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    Kullanıcı deneyimi UX (User experience) tasarımı, yalnızca görsel tasarımı değil, aynı zamanda işlevsellik, kullanılabilirlik ve erişilebilirliği de içeren bir ürün veya hizmetin genel kullanım deneyimini tasarlama sürecidir. Kullanıcıların ihtiyaçlarını, davranışlarını ve duygularını anlamayı ve bu ihtiyaçları karşılayan ve olumlu bir deneyim sağlayan bir ürün veya hizmet tasarlamayı içerir.
+
+                        Hem UI hem de UX tasarımı, kullanımı kolay, görsel olarak çekici ve kullanıcıların ihtiyaçlarını karşılayan ürün ve hizmetler oluşturmak için önemlidir. UI tasarımı, görsel ve etkileşimli öğelere odaklanırken, UX tasarımı, bir ürün veya hizmeti kullanmanın genel deneyimine odaklanır.
+                </p>
+            </div>
+        </div>
+    
+        <!-- İkinci fotoğraf sağda, yazı solda -->
+        <div class="details-item flex flex-col md:flex-row-reverse items-center md:space-x-12 md:space-x-reverse">
+            <div class="details-photo flex-shrink-0">
+                <img src="/İmages/ui-ux-2.png" alt="Kullanıcı Arayüzü" class="w-full h-auto md:max-w-md rounded-lg shadow-2xl">
+            </div>
+            <div class="details-text text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">Kullanıcı Arayüzü (UI) Tasarımı</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    Kullanıcı arayüzü UI (User Interface) tasarımı, bir yazılım uygulamasının veya web sitesinin görsel düzenini, etkileşimli öğelerini ve genel görünümünü ve hissini tasarlama sürecidir. Kullanıcıların ihtiyaçlarını ve hedeflerini anlamayı ve sezgisel, kullanımı kolay ve görsel olarak hoş bir tasarım yaratmayı içerir
+                </p>
+            </div>
+        </div>
+    
+        <!-- Üçüncü fotoğraf solda, yazı sağda -->
+        <div class="details-item flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="details-photo flex-shrink-0">
+                <img src="/İmages/yanınızdayız.webp" alt="Destek" class="w-full h-auto md:max-w-md rounded-lg shadow-2xl">
+            </div>
+            <div class="details-text text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">Sürekli Yanınızdayız</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    İhtiyaç duyduğunuz her anda yanınızdayız.
+
+                    Kullanıcı deneyimi (UX) ve kullanıcı arayüzü (UI) tasarımlarınızı tamamladıktan sonra da sizinle birlikteyiz. Tasarımlarınızı en verimli şekilde nasıl kullanabileceğinizi öğrenmeniz için sizlere rehberlik ediyor, kullanıcı dostu çözümlerle projelerinizin başarısını sürdürüyoruz. Her adımda uzman ekibimiz, UX/UI tasarımlarınızın maksimum performans göstermesi için destek sağlamaya hazırız.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+
+ 
+    <footer class="bg-gray-900 text-white pt-20">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="footer-branding flex flex-col items-center md:items-start space-y-4">
+              <img src="İmages/logo.PNG" alt="MC Global Logo" class="h-24 mx-auto md:mx-0">
+              <p class="text-gray-400 text-sm text-center md:text-left">Teknolojide lider olmak için adımlar atıyoruz. MC Global, gelişmiş çözümler ve yenilikçi teknolojilerle hizmetinizde.</p>
+          </div>
+          <div class="footer-column text-center md:text-left">
+              <h3 class="text-lg font-semibold mb-4">Hakkımızda</h3>
+              <ul class="space-y-2">
+                  <li><a href="hakkimizda.html" target="_blank" class="hover:text-gray-300">Hakkımızda</a></li>
+                  <li><a href="projelerimiz.html" target="_blank" class="hover:text-gray-300">Projelerimiz</a></li>
+              </ul>
+          </div>
+          <div class="footer-column text-center md:text-left">
+              <h3 class="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
+              <ul class="space-y-2">
+                  <li><a href="web_tasarimi.html" target="_blank" class="hover:text-gray-300">Web Tasarımı Ve Uygulamaları</a></li>
+                  <li><a href="mobiluygulama.html" target="_blank" class="hover:text-gray-300">Mobil Uygulama Geliştirme</a></li>
+                  <li><a href="ui_ux_tasarimi.html" target="_blank" class="hover:text-gray-300">UI/UX Tasarımı</a></li>
+                  <li><a href="sanal_gerceklik_uygulama_gelistirme.html" target="_blank" class="hover:text-gray-300">Sanal Gerçeklik Uygulamaları</a></li>
+                  <li><a href="artirilmis_gerceklik_uygulamasi_gelistirme.html" target="_blank" class="hover:text-gray-300">Artırılmış Gerçeklik Uygulamaları</a></li>
+                  <li><a href="masaustu_uygulama_gelistirme.html" target="_blank" class="hover:text-gray-300">Masaüstü Uygulama Geliştirme</a></li>
+              </ul>
+          </div>
+          <div class="footer-column text-center md:text-left">
+              <h3 class="text-lg font-semibold mb-4">İletişim</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                    <!-- Adres İkonu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 9a7 7 0 119.9 0c-1.76 3.41-3.55 5.52-4.95 7.48C8.6 14.52 6.81 12.41 5.05 9zm7.95 1a3 3 0 11-6 0 3 3 0 016 0z" clip-rule="evenodd"/>
+                    </svg>
+                     Balcalı Balcalı Mah. Güney Kampüs Bulv. Teknokent Sitesi Yönetim ve Kuluçka Merkezi, 01330 Sarıçam/Adana
+                </li>
+                <li class="flex items-center">
+                    <!-- Telefon İkonu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884l2.12-2.12a2 2 0 012.828 0l1.17 1.17a2 2 0 010 2.828L6.414 9.587a1.5 1.5 0 000 2.121l2.293 2.293a1.5 1.5 0 002.121 0l1.706-1.706a2 2 0 012.828 0l1.17 1.17a2 2 0 010 2.828l-2.12 2.121a4 4 0 01-5.656 0L2.003 11.54a4 4 0 010-5.656z"/>
+                    </svg>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B905540162603&text&type=phone_number&app_absent=0">Telefon:05540162603</a>
+                </li>
+                <li class="flex items-center">
+                    <!-- E-posta İkonu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.94 6.14a.5.5 0 00-.89.25v7.22c0 .83.67 1.5 1.5 1.5h13a1.5 1.5 0 001.5-1.5V6.39a.5.5 0 00-.89-.25l-6.2 5.18a.5.5 0 01-.62 0l-6.2-5.18z"/>
+                        <path d="M16.5 4a.5.5 0 01.5.5V7a.5.5 0 01-.81.39L10 3.42 3.81 7.39A.5.5 0 013 7V4.5a.5.5 0 01.5-.5h13z"/>
+                    </svg>
+                    <a href="mailto:mcglobaltr@gmail.com">mcglobaltr@gmail.com</a>603</a>
+                </li>
+            </ul>
+            
+          </div>
+      </div>
+      <div class="bg-gray-800 text-center py-4 mt-8 text-sm text-gray-400">
+          <p>&copy; 2024 MC Global. Tüm hakları saklıdır.</p>
+      </div>
+  </footer>
+    
+    
+    
+    
+    
+    
+
+    <!-- JavaScript -->
+    <script>
+      document.getElementById('hamburger').onclick = function () {
+        const mobileNavLinks = document.getElementById('mobile-nav-links');
+        const menuOverlay = document.getElementById('menu-overlay');
+        mobileNavLinks.classList.toggle('hidden');
+        menuOverlay.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-overlay').onclick = function () {
+        const mobileNavLinks = document.getElementById('mobile-nav-links');
+        const menuOverlay = document.getElementById('menu-overlay');
+        mobileNavLinks.classList.add('hidden');
+        menuOverlay.classList.add('hidden');
+      };
+    </script>
+  </body>
+</html>

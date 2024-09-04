@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC GLOBAL - BT DANIŞMANLIĞI</title>
+    <meta name="description" content="MC Global olarak, yenilikçi teknolojik çözümler ve BT danışmanlığı hizmetleri sunuyoruz. AR/VR, mobil uygulama geliştirme, web tasarımı ve daha fazlası.">
+    
+    <!-- Anahtar kelimeler -->
+    <meta name="keywords" content="BT Danışmanlığı, Teknoloji Çözümleri, AR/VR, Web Tasarımı, Mobil Uygulama, Masaüstü Uygulama Geliştirme, Mobil Oyun Geliştirme, 2D Oyunlar, 3D Oyunlar, Teknoloji, Yazılım, Web Uygulamaları,Stok Takibi,Muhasebe Yazılımları, VR Oyun, Sanal Gerçeklik, Artırılmış Gerçeklik, ">
+    
+    <!-- Sayfa yazarı -->
+    <meta name="author" content="MC Global">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="İmages/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="İmages/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="İmages/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+  </head>
+  <body>
+    <!-- Banner Bölümü -->
+    <div
+      class="relative bg-cover bg-center h-screen"
+      style="background-image: url('/İmages/back-ground.jpg')"
+    >
+      <div
+        class="navbar flex justify-between items-center p-6 bg-gray-900 bg-opacity-50 "
+      >
+        <a href="deneme.html" class="z-50"
+          ><img src="İmages/logo.PNG" alt="MC Global Logo" class="h-24 "
+        /></a>
+        <div class="md:hidden flex items-center ">
+          <button id="hamburger" class="text-white focus:outline-none z-50">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden md:flex z-50">
+          <ul class="flex space-x-6 text-white z-50  ">
+            <li><a href="deneme.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="projelerimiz.html">Projelerimiz </a></li>
+            <li><a href="hizmetlerimiz.html ">Hizmetlerimiz</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Menü Overlay (Sayfanın üstüne kaplayan görünmez alan) -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden"
+      ></div>
+
+      <!-- Mobil Menü Başlangıçta Gizli -->
+      <div
+        id="mobile-nav-links"
+        class="hidden fixed top-16 right-0 w-48 bg-gray-900 text-white shadow-lg z-50 mt-10"
+      >
+        <ul>
+          <li><a href="deneme.html" class="block p-4 hover:bg-blue-800">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html" class="block p-4 hover:bg-blue-800">Hakkımızda</a></li>
+          <li><a href="projelerimiz.html" class="block p-4 hover:bg-blue-800">Projelerimiz </a></li>
+          <li><a href="hizmetlerimiz.html" class="block p-4 hover:bg-blue-800">Hizmetlerimiz</a></li>
+        </ul>
+      </div>
+
+      <div
+        class="banner-content text-center text-white absolute inset-0 flex flex-col justify-center items-center"
+      >
+        <h1 class="text-4xl font-bold">Yeni Dünyaya Hazır Mısınız?</h1>
+        <p class="mt-4 max-w-md">
+          MC Global ailesi olarak gelişen teknolojiyi insan ve çevre yararına
+          kullanmayı kendimize ilke edinmiş bir ekip olarak, teknolojiyi çok
+          seviyoruz!
+        </p>
+        <a
+          href="hakkimizda.html"
+          class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >Detaylar</a
+        >
+      </div>
+    </div>
+
+    <!-- Hizmetler Bölümü -->
+    <section id="services" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold">Hizmetlerimiz</h2>
+          <p class="mt-2 text-gray-600">
+            AR/VR Teknolojileri, Mobil Uygulama, Web Sitesi ve Uygulamaları,
+            Masaüstü Uygulamaları hizmetleri sunuyoruz.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Servis Kartları -->
+          <div
+            class="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:scale-105 transition-transform"
+          >
+            <div class="text-yellow-500 text-5xl mb-4">
+              <i class="lni-immersive-ar"></i>
+            </div>
+            <h3 class="text-xl font-semibold">AR/VR Teknolojileri</h3>
+            <p class="mt-2 text-gray-600">
+              AR ve VR çözümleri ile gerçek dünya ile sanal dünya arasında köprü
+              kuruyoruz.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:scale-105 transition-transform"
+          >
+            <div class="text-blue-500 text-5xl mb-4">
+              <i class="lni-mobile"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Mobil Uygulama</h3>
+            <p class="mt-2 text-gray-600">
+              İhtiyaçlarınıza uygun mobil uygulamalar geliştiriyoruz.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:scale-105 transition-transform"
+          >
+            <div class="text-green-500 text-5xl mb-4">
+              <i class="lni-laptop"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Web Sitesi ve Uygulamaları</h3>
+            <p class="mt-2 text-gray-600">
+              Modern ve işlevsel web siteleri ve uygulamaları tasarlıyoruz.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:scale-105 transition-transform"
+          >
+            <div class="text-yellow-500 text-5xl mb-4">
+              <i class="lni-ux/uı "></i>
+            </div>
+            <h3 class="text-xl font-semibold">UI/UX Tasarımı</h3>
+            <p class="mt-2 text-gray-600">
+              Modern, etkili ve kullanıcı dostu arayüzler tasarlıyoruz.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:scale-105 transition-transform"
+          >
+            <div class="text-yellow-500 text-5xl mb-4">
+              <i class="lni-danısmanlık"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Danışmanlık
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Teknolojik çözümler konusunda danışmanlık hizmeti sunuyoruz.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:scale-105 transition-transform"
+          >
+            <div class="text-yellow-500 text-5xl mb-4">
+              <i class="lni-desktop"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Masaüstü Uygulamaları</h3>
+            <p class="mt-2 text-gray-600">
+              Masaüstü uygulamaları ile işletmenizi dijitalleştiriyoruz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnerlerimiz Bölümü -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold">Partnerlerimiz</h2>
+        <div class="flex justify-center items-center flex-wrap mt-8 gap-6">
+          <img
+            src="İmages/güllüoglu.png"
+            alt="Partner 1"
+            class="h-16 md:h-20 animate-bounce"
+          />
+          <img
+            src="İmages/fayda_mersin_cag_universitesi.pdf.png"
+            alt="Partner 2"
+            class="h-16 md:h-20 animate-bounce"
+          />
+          <img
+            src="İmages/KOSGEB_logo.png"
+            alt="Partner 3"
+            class="h-16 md:h-20 animate-bounce"
+          />
+          <img
+            src="İmages/sustech.png"
+            alt="Partner 4"
+            class="h-16 md:h-20 animate-bounce"
+          />
+          <img
+            src="İmages/t3-logo-TR-01.png"
+            alt="Partner 5"
+            class="h-16 md:h-20 animate-bounce"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Bölümü -->
+    <footer class="bg-gray-900 text-white pt-20">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="footer-branding flex flex-col items-center md:items-start space-y-4">
+              <img src="İmages/logo.PNG" alt="MC Global Logo" class="h-24 mx-auto md:mx-0">
+              <p class="text-gray-400 text-sm text-center md:text-left">Teknolojide lider olmak için adımlar atıyoruz. MC Global, gelişmiş çözümler ve yenilikçi teknolojilerle hizmetinizde.</p>
+          </div>
+          <div class="footer-column text-center md:text-left">
+              <h3 class="text-lg font-semibold mb-4">Hakkımızda</h3>
+              <ul class="space-y-2">
+                  <li><a href="hakkimizda.html" target="_blank" class="hover:text-gray-300">Hakkımızda</a></li>
+                  <li><a href="projelerimiz.html" target="_blank" class="hover:text-gray-300">Projelerimiz</a></li>
+              </ul>
+          </div>
+          <div class="footer-column text-center md:text-left">
+              <h3 class="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
+              <ul class="space-y-2">
+                  <li><a href="web_tasarimi.html" target="_blank" class="hover:text-gray-300">Web Tasarımı Ve Uygulamaları</a></li>
+                  <li><a href="mobiluygulama.html" target="_blank" class="hover:text-gray-300">Mobil Uygulama Geliştirme</a></li>
+                  <li><a href="ui_ux_tasarimi.html" target="_blank" class="hover:text-gray-300">UI/UX Tasarımı</a></li>
+                  <li><a href="sanal_gerceklik_uygulama_gelistirme.html" target="_blank" class="hover:text-gray-300">Sanal Gerçeklik Uygulamaları</a></li>
+                  <li><a href="artirilmis_gerceklik_uygulamasi_gelistirme.html" target="_blank" class="hover:text-gray-300">Artırılmış Gerçeklik Uygulamaları</a></li>
+                  <li><a href="masaustu_uygulama_gelistirme.html" target="_blank" class="hover:text-gray-300">Masaüstü Uygulama Geliştirme</a></li>
+              </ul>
+          </div>
+          <div class="footer-column text-center md:text-left">
+              <h3 class="text-lg font-semibold mb-4">İletişim</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                    <!-- Adres İkonu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 9a7 7 0 119.9 0c-1.76 3.41-3.55 5.52-4.95 7.48C8.6 14.52 6.81 12.41 5.05 9zm7.95 1a3 3 0 11-6 0 3 3 0 016 0z" clip-rule="evenodd"/>
+                    </svg>
+                     Balcalı Balcalı Mah. Güney Kampüs Bulv. Teknokent Sitesi Yönetim ve Kuluçka Merkezi, 01330 Sarıçam/Adana
+                </li>
+                <li class="flex items-center">
+                    <!-- Telefon İkonu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884l2.12-2.12a2 2 0 012.828 0l1.17 1.17a2 2 0 010 2.828L6.414 9.587a1.5 1.5 0 000 2.121l2.293 2.293a1.5 1.5 0 002.121 0l1.706-1.706a2 2 0 012.828 0l1.17 1.17a2 2 0 010 2.828l-2.12 2.121a4 4 0 01-5.656 0L2.003 11.54a4 4 0 010-5.656z"/>
+                    </svg>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B905540162603&text&type=phone_number&app_absent=0">Telefon:05540162603</a>
+                    
+                </li>
+                <li class="flex items-center">
+                    <!-- E-posta İkonu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.94 6.14a.5.5 0 00-.89.25v7.22c0 .83.67 1.5 1.5 1.5h13a1.5 1.5 0 001.5-1.5V6.39a.5.5 0 00-.89-.25l-6.2 5.18a.5.5 0 01-.62 0l-6.2-5.18z"/>
+                        <path d="M16.5 4a.5.5 0 01.5.5V7a.5.5 0 01-.81.39L10 3.42 3.81 7.39A.5.5 0 013 7V4.5a.5.5 0 01.5-.5h13z"/>
+                    </svg>
+                    <a href="mailto:mcglobaltr@gmail.com">mcglobaltr@gmail.com</a>
+                </li>
+            </ul>
+            
+          </div>
+      </div>
+      <div class="bg-gray-800 text-center py-4 mt-8 text-sm text-gray-400">
+          <p>&copy; 2024 MC Global. Tüm hakları saklıdır.</p>
+      </div>
+  </footer>
+    
+    
+    
+    
+    
+    
+
+    <!-- JavaScript -->
+    <script>
+      document.getElementById('hamburger').onclick = function () {
+        const mobileNavLinks = document.getElementById('mobile-nav-links');
+        const menuOverlay = document.getElementById('menu-overlay');
+        mobileNavLinks.classList.toggle('hidden');
+        menuOverlay.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-overlay').onclick = function () {
+        const mobileNavLinks = document.getElementById('mobile-nav-links');
+        const menuOverlay = document.getElementById('menu-overlay');
+        mobileNavLinks.classList.add('hidden');
+        menuOverlay.classList.add('hidden');
+      };
+    </script>
+  </body>
+</html>

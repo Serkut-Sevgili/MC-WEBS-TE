@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Anahtar kelimeler -->
+     <meta name="keywords" content="BT Danışmanlığı, Teknoloji Çözümleri, AR/VR, Web Tasarımı, Mobil Uygulama, Masaüstü Uygulama Geliştirme, Mobil Oyun Geliştirme, 2D Oyunlar, 3D Oyunlar, Teknoloji, Yazılım, Web Uygulamaları,Stok Takibi,Muhasebe Yazılımları, VR Oyun, Sanal Gerçeklik, Artırılmış Gerçeklik, ">
+
+    <title>MC GLOBAL - BT DANIŞMANLIĞI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="İmages/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="İmages/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="İmages/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <!-- Banner Bölümü -->
+    <div
+      class="relative bg-cover bg-center h-screen"
+      style="background-image: url('/İmages/Artırılmış\ gerçeklik.jpg')"
+    >
+      <div
+        class="navbar flex justify-between items-center p-6 bg-gray-900 bg-opacity-50 "
+      >
+        <a href="deneme.html" class="z-50"
+          ><img src="İmages/logo.PNG" alt="MC Global Logo" class="h-24 "
+        /></a>
+        <div class="md:hidden flex items-center ">
+          <button id="hamburger" class="text-white focus:outline-none z-50">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden md:flex z-50">
+          <ul class="flex space-x-6 text-white z-50">
+            <li><a href="deneme.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="projelerimiz.html">Projelerimiz </a></li>
+            <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Menü Overlay (Sayfanın üstüne kaplayan görünmez alan) -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden"
+      ></div>
+
+      <!-- Mobil Menü Başlangıçta Gizli -->
+      <div
+        id="mobile-nav-links"
+        class="hidden fixed top-16 right-0 w-48 bg-gray-900 text-white shadow-lg z-50"
+      >
+        <ul>
+          <li><a href="deneme.html" class="block p-4 hover:bg-gray-700">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html" class="block p-4 hover:bg-gray-700">Hakkımızda</a></li>
+          <li><a href="projelerimiz.html" class="block p-4 hover:bg-gray-700">Projelerimiz </a></li>
+          <li><a href="hizmetlerimiz.html" class="block p-4 hover:bg-gray-700">Hizmetlerimiz</a></li>
+        </ul>
+      </div>
+
+      <div
+        class="banner-content text-center text-white absolute inset-0 flex flex-col justify-center items-center"
+      >
+        <h1 class="text-5xl font-bold">ARTIRILMIŞ GERÇEKLİK
+        </h1>
+        <p class="mt-6 max-w-md "  style="font-size: 18px">
+
+            Hayallerinizi Gerçek Dünya İle Birleştirin
+
+        </p>
+      
+      </div>
+    </div>
+    
+    <div class="banner-description bg-gradient-to-r from-blue-500 to-teal-400 p-6 text-center rounded-lg shadow-lg mb-8">
+        <p class="text-white">
+            Sanal gerçeklik teknolojileri ile gerçek dünyadaki hayallerinizi sanal ortamda kurguluyoruz.
+        </p>
+    </div>
+    
+    
+    <div class="details-container space-y-16 p-8 md:p-16 bg-white">
+        <!-- İlk fotoğraf solda, yazı sağda -->
+        <div class="details-item flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="details-photo flex-shrink-0">
+                <img src="/İmages/ar1.png" alt="Alışveriş/Hizmet Sektörü" class="w-full h-auto md:max-w-md rounded-lg shadow-2xl">
+            </div>
+            <div class="details-text text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">Endüstride Artırılmış Gerçeklik</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    Artırılmış gerçeklik, otomotiv endüstrisinde devrim yaratıyor. Tasarımdan üretime kadar her aşamada 
+                    3 boyutlu modeller ve sanal prototiplerle iş süreçlerinizi hızlandırın. Sürükleyici deneyimler sayesinde 
+                    tasarımlarınızı daha verimli bir şekilde hayata geçirin.
+                </p>
+            </div>
+        </div>
+    
+        <!-- İkinci fotoğraf sağda, yazı solda -->
+        <div class="details-item flex flex-col md:flex-row-reverse items-center md:space-x-12 md:space-x-reverse">
+            <div class="details-photo flex-shrink-0">
+                <img src="/İmages/ar2.webp" alt="Alışveriş/Hizmet Sektörü" class="w-full h-auto md:max-w-md rounded-lg shadow-2xl">
+            </div>
+            <div class="details-text text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">Mimarlıkta Artırılmış Gerçeklik</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    Artırılmış gerçeklik, gayrimenkul ve mimarlık sektörlerinde müşteri deneyimini bir üst seviyeye taşıyor. 
+                    Potansiyel müşterilerinizin projelerinizi dijital olarak gezmesine ve her detayı anında görmesine olanak tanıyın. 
+                    Satış süreçlerinizi hızlandırın ve müşteri memnuniyetini artırın.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Üçüncü fotoğraf solda, yazı sağda -->
+        <div class="details-item flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="details-photo flex-shrink-0">
+                <img src="/İmages/eğitimdear.webp" alt="Yeni Sektör Uygulamaları" class="w-full h-auto md:max-w-md rounded-lg shadow-2xl">
+            </div>
+            <div class="details-text text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">Eğitimde Artırılmış Gerçeklik</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    Artırılmış gerçeklik, eğitim sektöründe devrim niteliğinde bir yenilik sunuyor. Öğrencilerinizin dersleri daha 
+                    etkili bir şekilde anlamalarını sağlamak için sanal objeler ve etkileşimli içerikler sunun. AR teknolojisi ile 
+                    öğrenciler, konuları daha derinlemesine keşfedebilir, pratik yapabilir ve gerçek dünya ile sanal dünyayı birleştirerek 
+                    daha kapsamlı bir öğrenme deneyimi yaşayabilirler.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+
+ 
+    <footer class="bg-gray-900 text-white pt-20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="footer-branding flex flex-col items-center md:items-start space-y-4">
+                <img src="İmages/logo.PNG" alt="MC Global Logo" class="h-24 mx-auto md:mx-0">
+                <p class="text-gray-400 text-sm text-center md:text-left">Teknolojide lider olmak için adımlar atıyoruz. MC Global, gelişmiş çözümler ve yenilikçi teknolojilerle hizmetinizde.</p>
+            </div>
+            <div class="footer-column text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Hakkımızda</h3>
+                <ul class="space-y-2">
+                    <li><a href="hakkimizda.html" target="_blank" class="hover:text-gray-300">Hakkımızda</a></li>
+                    <li><a href="projelerimiz.html" target="_blank" class="hover:text-gray-300">Projelerimiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-column text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
+                <ul class="space-y-2">
+                    <li><a href="web_tasarimi.html" target="_blank" class="hover:text-gray-300">Web Tasarımı Ve Uygulamaları</a></li>
+                    <li><a href="mobiluygulama.html" target="_blank" class="hover:text-gray-300">Mobil Uygulama Geliştirme</a></li>
+                    <li><a href="ui_ux_tasarimi.html" target="_blank" class="hover:text-gray-300">UI/UX Tasarımı</a></li>
+                    <li><a href="sanal_gerceklik_uygulama_gelistirme.html" target="_blank" class="hover:text-gray-300">Sanal Gerçeklik Uygulamaları</a></li>
+                    <li><a href="artirilmis_gerceklik_uygulamasi_gelistirme.html" target="_blank" class="hover:text-gray-300">Artırılmış Gerçeklik Uygulamaları</a></li>
+                    <li><a href="masaustu_uygulama_gelistirme.html" target="_blank" class="hover:text-gray-300">Masaüstü Uygulama Geliştirme</a></li>
+                </ul>
+            </div>
+            <div class="footer-column text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">İletişim</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-10.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 2a8 8 0 100 16 8 8 0 000-16zm0 9.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" clip-rule="evenodd"/>
+                        </svg>
+                         Balcalı Balcalı Mah. Güney Kampüs Bulv. Teknokent Sitesi Yönetim ve Kuluçka Merkezi, 01330 Sarıçam/Adana
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-10.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 2a8 8 0 100 16 8 8 0 000-16zm0 9.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" clip-rule="evenodd"/>
+                        </svg>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B905540162603&text&type=phone_number&app_absent=0">Telefon:05540162603</a>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-10.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 2a8 8 0 100 16 8 8 0 000-16zm0 9.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" clip-rule="evenodd"/>
+                        </svg>
+                        <a href="mailto:mcglobaltr@gmail.com">mcglobaltr@gmail.com</a>603</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-gray-800 text-center py-4 mt-8 text-sm text-gray-400">
+            <p>&copy; 2024 MC Global. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').onclick = function () {
+            const mobileNavLinks = document.getElementById('mobile-nav-links');
+            const menuOverlay = document.getElementById('menu-overlay');
+            mobileNavLinks.classList.toggle('hidden');
+            menuOverlay.classList.toggle('hidden');
+        };
+
+       
+        
+        document.getElementById('menu-overlay').onclick = function () {
+            const mobileNavLinks = document.getElementById('mobile-nav-links');
+            const menuOverlay = document.getElementById('menu-overlay');
+            mobileNavLinks.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+        };
+    </script>
+
+</body>
+</html>
